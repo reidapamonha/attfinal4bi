@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo da página */
+body {
+
+    background-color: #f3f3ff;
+}
+
+/* Tornando o card com bordas arredondadas mais sutis */
+.card {
+    border-radius: 10px; /* Bordas mais sutis */
+    overflow: hidden; /* Garante que o conteúdo não saia da borda arredondada */
+}
+
+/* Estilizando a barra de abas */
+.nav-tabs {
+    border-bottom: #2c3e50; /* Remover a borda inferior das abas */
+}
+
+/* Estilizando as abas individuais (links) */
+.nav-tabs .nav-link {
+    border: 2px solid #2980b9; /* Borda de 2px para cada aba */
+    border-radius: 5px; /* Bordas ligeiramente arredondadas */
+    margin-right: 5px; /* Espaçamento entre as abas */
+    color: #2980b9; /* Cor do texto */
+}
+
+/* Alterando a cor das abas quando estão ativas ou selecionadas */
+.nav-link.active {
+    background-color: #2980b9; /* Cor de fundo da aba ativa */
+    color: white; /* Cor do texto da aba ativa */
+    border-color: #1c5981; /* Cor mais escura da borda da aba ativa */
+}
+
+/* Estilizando o card-header para um fundo mais sutil */
+.card-header {
+    background-color: #ecf0f1; /* Cor clara para o cabeçalho do card */
+    border-bottom: 1px solid #ddd; /* Borda sutil abaixo do cabeçalho */
+}
+
+/* Estilo para as abas desabilitadas */
+.nav-link.disabled {
+    color: #bdc3c7; /* Cor cinza para texto desabilitado */
+    border-color: #bdc3c7; /* Borda cinza para aba desabilitada */
+    pointer-events: none; /* Desabilitar a interação */
+}
+
+/* Estilizando o corpo do card */
+.card-body {
+    background-color: #ffffff; /* Cor de fundo do corpo do card */
+    color: #2c3e50; /* Cor do texto */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
