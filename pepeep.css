@@ -9,12 +9,35 @@ body {
 
     background-color: #f3f3ff;
 }
+.card-container {
+    display: flex;  /* Usando Flexbox */
+    flex-wrap: wrap; /* Permite que os cards se ajustem quando não cabem na linha */
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-content: space-between; /* Espaço entre os cards */
+    padding: 20px;
+}
 
 /* Tornando o card com bordas arredondadas mais sutis */
 .card {
+    width: 18rem; /* largura fixa para os cards */
+    height: 25rem; /* altura fixa para os cards */
+    margin: 10px; /* margem entre os cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 10px; /* Bordas mais sutis */
     overflow: hidden; /* Garante que o conteúdo não saia da borda arredondada */
-}
+    display: flexbox;
+    flex: 1 1 calc(33.33% - 20px); /* Faz os cards terem 33.33% de largura e ajusta o espaço */
+            max-width: 33.33%; /* Garante que os cards não ultrapassem 33.33% */
+            box-sizing: border-box; /* Inclui padding e borda no cálculo de largura */
+        }
+
+        .card-img-top {
+            width: 100%; /* Faz a imagem ocupar toda a largura do card */
+            height: 10rem; /* Define a altura das imagens */
+            object-fit: cover; /* Faz com que a imagem cubra o espaço sem distorcer */
+        }
 
 /* Estilizando a barra de abas */
 .nav-tabs {
@@ -54,4 +77,10 @@ body {
     background-color: #ffffff; /* Cor de fundo do corpo do card */
     color: #2c3e50; /* Cor do texto */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
 }
