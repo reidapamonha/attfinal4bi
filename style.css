@@ -29,8 +29,13 @@
   }
   
   main {
-    background: url("glossy-abstract-3840x2160-9602.jpeg") no-repeat center center;
+  
     background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px; /* Espaço entre os containers */
+    width: 90%;
+    margin: 20px auto;
     height: 92vh;
   }
   
@@ -109,3 +114,60 @@
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+
+  /* Containers */
+.container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+p, ul {
+  margin: 10px 0;
+}
+
+/* Estilo para Habilidades */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Carrossel */
+.carousel-container {
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.carousel-item {
+  flex: 0 0 200px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Link do GitHub */
+a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
