@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylecarrino.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carrinho de Compras</h1>
+        <div class="products">
+            <div class="product">
+                <h2>Maçã</h2>
+                <button onclick="addToCart('Maçã')">Adicionar</button>
+            </div>
+            <div class="product">
+                <h2>Banana</h2>
+                <button onclick="addToCart('Banana')">Adicionar</button>
+            </div>
+            <div class="product">
+                <h2>Laranja</h2>
+                <button onclick="addToCart('Laranja')">Adicionar</button>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Seu Carrinho</h2>
+            <ul id="cart-items"></ul>
+            <div class="cart-actions">
+                <button onclick="finalizeOrder()">Fazer Pedido</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

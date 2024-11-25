@@ -1,0 +1,56 @@
+body {
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    color: rgb(0, 13, 24);
+    background: #23232e;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #ff1198;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.topics {
+    display: flex;
+    flex-direction: column; /* Empilha os tópicos verticalmente */
+    gap: 20px; /* Espaço entre os tópicos */
+}
+
+.topic {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.topic h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.topic p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.topic-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
