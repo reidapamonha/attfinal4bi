@@ -1,0 +1,76 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container do Carrossel */
+.carousel-container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Título */
+.carousel-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Carrossel */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Card */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center;
+    width: 250px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Link no Card */
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 15px;
+}
+
+/* Imagem no Card */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Texto do Card */
+.card h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777;
+}
